@@ -1,0 +1,125 @@
+NAME:  What Does It Take to Heat a New Room? 
+TYPE:  Time series
+SIZE:  81 observations, 13 variables
+
+DESCRIPTIVE ABSTRACT:
+In a residential home, energy consumption is closely related to the
+outdoor temperature and size of the house.   In a home of a given size,
+temperature fluctuations and energy consumption vary fairly predictably
+over time.  When homeowners add a room, other things being equal,
+utility usage should increase.  This dataset permits students to
+estimate the energy demand and make forecasts for future months, as
+well as explore other relationships.
+
+The dataset contains natural gas and electricity usage data for a
+gas-heated single-family residence in the Boston area from September
+1990 through May 1997, accompanied by monthly climatological data.  
+The dataset is useful for illustrating the concepts and techniques of
+central tendency, dispersion, elementary time series analysis,
+correlation, simple and multiple regression, and variable
+transformations.
+
+SOURCES:
+Bay State Gas Co., Boston Edison, National Weather Service Taunton (MA)
+Regional Office.
+
+VARIABLE DESCRIPTIONS:
+Columns
+ 1 -  7  Observation month (formatted mmm-yy)
+10 - 11  Number of days in the month
+14 - 15  Mean monthly temperature in Boston, in degrees Fahrenheit
+17 - 20  Mean natural gas usage per day for the month, in therms
+23 - 25  Total therms used for the month
+28 - 29  Days in the gas company billing cycle for the month
+31 - 34  Total kilowatt hours consumed in the month
+36 - 39  Mean kilowatt hours per day for the month
+42 - 43  Days in the electric company billing cycle for the month
+     46  Dummy variable for method of determining kwh for the month 
+         (0 = actual month-end meter reading, 1 = estimated reading)
+48 - 51  Total heating degree days for the month
+54 - 56  Total cooling degree days for the month
+     58  Dummy variable for the new room
+         (0 = pre-addition, 1 = post-addition)
+
+Values are aligned and delimited by blanks.  
+
+A therm is a standard measure of the heating capacity of a cubic foot
+of natural gas.  Due to changes in air temperature during the year, the
+heating capacity varies from month to month.
+
+Degree days are a measure of temperature fluctuations that stimulate
+demand for heating or cooling.  Specifically, heating degree days are
+sums of the absolute value of temperature deviations below a base
+temperature of 65 degrees Fahrenheit.  For example, if the mean daily
+temperature were 60 degrees one day, that would represent five heating
+degree days.  Conversely, cooling degree days sum the positive
+deviations from the base of 65 degrees.
+
+SPECIAL NOTES:
+For billing purposes, the gas utility month starts on the 18th of the
+month, while the electric utility month starts on the 12th.   For
+example, the January gas bill refers to usage from December 18 through
+January 17 (approximately) and the electric bill for the same month
+refers to usage from December 12 through January 11 (approximately).
+The gas company calculates usage based on a monthly electronic reading
+of the gas meter, but the electric company meter reader visits the
+house every other month; in the alternate months, the electric company
+estimates electricity consumption.  Sundays, holidays, and snowstorms
+can interrupt the schedule.  In the summer months, the gas company
+issues one bill for July and August, and one for September and
+October.
+
+STORY BEHIND THE DATA:
+In our home, our furnace and water heater both use natural gas.  We
+have a gas stove, but our clothes dryer is all-electric.  In early
+1996, we added a bedroom and enlarged the kitchen, and we were
+interested in estimating the additional consumption of natural gas
+attributable to the new room.   The family remained the same size and
+did not change hot-water-use habits.  The new construction improved the
+insulation in the affected areas, and several new lighting circuits
+were added.  There were no other changes that would influence energy
+consumption.
+
+The major questions that prompted collection of the data are these: 
+
+In an average month, do we use additional natural gas as a result of 
+adding a room? If so, how much?
+
+In an average month, do we use additional electricity as a result of 
+adding a room? If so, how much?
+
+Additional information about these data can be found in the "Datasets
+and Stories" article "What Does It Take to Heat a New Room?  Estimating
+Utility Demand in a Home" in the _Journal of Statistics Education_
+(Carver 1998).  
+
+PEDAGOGICAL NOTES:
+This dataset can be useful at several points in an introductory
+course.  The mean monthly temperature data offer a familiar example for
+descriptive techniques.  The degree day variables can lead to very
+useful discussions of "what does this variable measure"?  Simple time
+series plots of the gas and electricity consumption, as well as the
+various temperature measures, nicely illustrate seasonal variation.
+More substantially, the intent in compiling the data was causal
+modeling, and the relationship between outdoor temperature and energy
+consumption lends itself well to correlation and regression analysis.
+With multiple regression, the addition of the new room can be
+introduced into the model.  Because gas consumption is theoretically
+flat above some high mean temperature, the dataset provides an
+example of the usefulness of piece-wise linear models or curvilinear
+transformations, and can illustrate the risks of ill-considered
+extrapolation.
+
+REFERENCE:
+A dataset including temperature and electricity consumption can be
+found in Chatterjee, S., Handcock, M., and Simonoff (1995), _A Casebook
+for a First Course in Statistics and Data Analysis_, New York: Wiley,
+pp. 177-184.
+
+SUBMITTED BY:
+Robert Carver
+Department of Business Administration
+Stonehill College
+320 Washington Street
+Easton, MA  02357-1150
+rcarver@stonehill.edu
