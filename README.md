@@ -1,6 +1,6 @@
-# Machine Learning with Scikit-learn
+# Machine Learning with Python
 
-This repository serves as a practice for the machine learning models and scikit-learn Python library. 
+This repository contains notebooks for data analysis and machine learning using Python and various cloud computing services.
 
-Notebooks: supervised learning
+Supervised learning with Scikit-learn
 <li> Exploratory data analysis: <a  href="https://github.com/lilianasku/ML-with-Scikit-learn/blob/master/supervised_learning/01.EDA_with_scikit-learn.ipynb"> 01.EDA_with_scikit-learn.ipynb </a>
